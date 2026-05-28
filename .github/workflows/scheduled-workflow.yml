@@ -2,7 +2,7 @@ name: Scheduled Workflow
 run-name: Scheduled Workflow
 on:
     schedule:
-        - cron: "5 * * * *"
+        - cron: "0/5 * * * *"
           timezone: "America/New_York"
 jobs:
     run_every_5_mins:
