@@ -1,6 +1,7 @@
 name: Scheduled Workflow
 run-name: Scheduled Workflow
 on:
+    push:
     schedule:
         - cron: "5 * * * *"
           timezone: "America/New_York"
