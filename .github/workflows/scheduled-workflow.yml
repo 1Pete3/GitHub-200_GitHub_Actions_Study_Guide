@@ -9,4 +9,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Announce job"
-              run: echo "This job runs at 5 minutes passed each hour"
+              run: echo "This job runs every 5 minutes"
