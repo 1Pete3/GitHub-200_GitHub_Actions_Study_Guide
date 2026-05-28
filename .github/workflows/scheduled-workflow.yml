@@ -1,0 +1,11 @@
+name: Scheduled Workflow
+on:
+    schedule:
+        - cron: "5 * * * *"
+          timezone: "America/New York"
+jobs:
+    run_every_5_mins:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Announce job"
+              run: echo "This job runs at 5 minutes passed each hour"
