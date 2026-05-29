@@ -5,7 +5,8 @@ jobs:
     run-manual-wf:
         runs-on: ubuntu-latest
         steps:
-            - name: random-name
+            - name: "random name"
               uses: octodemo-resources/name-generator-action@eaebafb63565c11a483907f1f589adf02fa7be85
-            - name: echo
+            
+            - name: "echo"
               run: echo "This is a manual workflow that uses the workflow_dispatch event"
