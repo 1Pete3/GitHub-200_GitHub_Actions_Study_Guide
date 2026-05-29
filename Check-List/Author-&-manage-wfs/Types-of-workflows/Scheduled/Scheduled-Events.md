@@ -56,4 +56,25 @@ on:
 #### Enterprise without Enterprise Managed Users
 - Removing user from a organization ➡️ still the `actor`
 
+---- 
+
 **The user account status is more important than their membership status**
+
+#### Using schedule with other event triggers
+Example
+```
+name: Scheduled Workflow
+run-name: Scheduled Workflow
+on:
+    push:
+    schedule:
+        - cron: "5 * * * *"
+          timezone: "America/New_York"
+jobs:
+    run_every_5_mins:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Announce job"
+              run: echo "This job runs 5 minutes passed the hour or on a push"
+
+```

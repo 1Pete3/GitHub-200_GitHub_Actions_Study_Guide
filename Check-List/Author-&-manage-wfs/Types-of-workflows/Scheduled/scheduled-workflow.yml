@@ -10,4 +10,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Announce job"
-              run: echo "This job runs 5 minutes passed the hour"
+              run: echo "This job runs 5 minutes passed the hour or on a push"
