@@ -1,13 +1,11 @@
 name: Manual-Workflow
-run-name:
-    Manual-Workflow
+run-name: Manual-Workflow
 on: workflow_dispatch
 jobs:
     run-manual-wf:
         runs-on: ubuntu-latest
-        steps: 
-            - name: rick-roll
-              uses: TejasvOnly/random-rickroll@f3c4666e06fe75516d208fad01bfcbde7b37ce1e
-              with:
-                percentage: 50
-                GITHUB_TOKEN: ${{ github.token }}
+        steps:
+            - name: random-name
+              uses: octodemo-resources/name-generator-action@eaebafb63565c11a483907f1f589adf02fa7be85
+            - name: echo
+              run: echo "This is a manual workflow that uses the workflow_dispatch event"
